@@ -1,0 +1,207 @@
+body{
+    background: #F4F3F5 0% 0% no-repeat padding-box; 
+    font-family: Montserrat; 
+    margin: 0px; 
+   }
+a{
+    text-decoration: none;
+    color:  #F4F3F5
+}
+
+
+
+
+
+
+
+/*---------Containers defineted------------------------*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-container rigth-container";
+    grid-template-rows: auto;
+    column-gap: 0px;
+}
+
+.left-container{
+    grid-area: left-container;
+    height: 833px;
+    background: #6200EA 0% 0% no-repeat padding-box;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr 1fr 2fr;
+    
+}
+.rigth-container{
+    grid-area: rigth-container;
+    background: transparent url('assets/bailey-zindel-396398-unsplash.jpg') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    /*mix-blend-mode: luminosity;*/
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+}
+
+
+/*----------------RIGTH container------------------------*/
+
+.form{
+    width: 540px;
+    height: 540px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    align-self: center;
+    justify-self: center;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+h1{
+    font-size: 42px;
+}
+
+#password, #login {
+    /*grid-column: 1 / 2;*/
+    height: 60px;
+    font-size: 15px;
+    color:  #211138;
+    letter-spacing: 2.4px;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: left;
+    padding-left: 50px;
+    background: #F4F3F5 0% 0% no-repeat padding-box;
+    border:0px;
+    margin-top: 20px;
+}
+
+
+#login:focus, #password:focus {
+    border: 0px solid #F4F3F5;
+    border-bottom-width: 4px;
+    border-bottom-color: #6200EA;
+    outline: 0;
+   }
+
+   .forget{
+    text-align: right;
+    letter-spacing: 2.4px;
+    color: #6200EA;
+    text-transform: uppercase;
+    font-weight: bold;
+   }
+
+
+.signup{
+    height: 35px;
+    background: #6200EA 0% 0% no-repeat padding-box;
+    border: 2px solid #6200EA;
+    border-radius: 24px;
+    text-align: center;
+    letter-spacing: 2.4px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-top: 15px;
+    
+}
+
+.signup:hover{
+    background-color: #B2ACBA; font-weight: bold;
+}
+
+
+.login{
+    height: 35px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #6200EA;
+    border-radius: 24px;
+    text-align: center;
+    letter-spacing: 2.4px;
+    color: #6200EA;
+    text-transform: uppercase;
+    padding-top: 15px;
+    
+}
+
+.login:hover{
+    background-color: #B2ACBA; font-weight: bold;
+}
+
+
+
+/*----------------LEFT container------------------------*/
+
+.logo {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 30px;
+    
+}    
+
+
+.logos{
+    margin-left: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+
+.logo__icon-wrapper,
+.logo__text, .logos {
+  display: inline-block;
+}
+
+.logo__icon-wrapper { 
+  width:            32px;
+  height:           32px;
+  padding:          10px;
+  border-radius:    50%;
+  margin-right:     20px;
+  background-color: #ffffff;
+  text-align:       center;
+}
+
+  .logo__icon { 
+    color:     #6200ea;
+    font-size: 32px;
+  }
+
+.logo__text {
+    margin: 0;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------footer-----------------------*/
+footer{
+    height: 40px;
+    font-family: Montserrat;
+    letter-spacing: 2.4px;
+    font-size: 15px;
+    text-align: center;
+    color: #B2ACBA;
+    text-transform: uppercase;
+    padding: 33px 0 32px 0;
+    background: #211138 0% 0% no-repeat padding-box;
+}
+
+.footer-name {
+    color: #6200EA;
+}
